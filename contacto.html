@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Set the language to Spanish -->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Contacto</h2>
-    <p>Utiliza el siguiente formulario para ponerte en contacto conmigo:</p>
-    <form action="#" method="POST"> <!-- Use your desired action URL -->
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <div class="contact-container">
+        <h2>Contacto</h2>
+        <p>Utiliza el siguiente formulario para ponerte en contacto conmigo:</p>
+        <form action="#" method="POST" class="contact-form">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="comentarios">Comentarios:</label>
-        <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>

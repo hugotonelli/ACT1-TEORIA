@@ -56,3 +56,73 @@ footer {
     padding: 10px 0;
     flex-shrink: 0; /* Prevent the footer from shrinking */
 }
+
+
+/* Add styles for the contact form */
+.contact-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Add styles for the about me page */
+.aboutme-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutme-detail {
+    margin-bottom: 10px;
+}
+
+.aboutme-detail span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.aboutme-experience {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutme-experience li {
+    margin-bottom: 10px;
+}
