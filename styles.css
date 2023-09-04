@@ -188,7 +188,7 @@ footer {
     color: #fff;
 }
 
-/* Add adaptive layout for plant cards */
+/* Add adaptive layout for plant cards within iframes */
 @media (min-width: 768px) {
     .main {
         display: grid;
