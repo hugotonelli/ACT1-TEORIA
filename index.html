@@ -10,54 +10,19 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#interior">Interior Plants</a></li>
-                <li><a href="#exterior">Exterior Plants</a></li>
+                <li><a href="interior.html" target="plant-frame">Interior Plants</a></li>
+                <li><a href="exterior.html" target="plant-frame">Exterior Plants</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Welcome to My Garden</h1>
-        
-        <div id="plant-container">
-            <!-- Content from interior.html and exterior.html will be loaded here -->
-        </div>
-        
-        <div class="radio-buttons">
-            <label for="interior-radio">Interior</label>
-            <input type="radio" id="interior-radio" name="plant-group" value="interior" checked>
-            
-            <label for="exterior-radio">Exterior</label>
-            <input type="radio" id="exterior-radio" name="plant-group" value="exterior">
-        </div>
+        <iframe src="interior.html" name="plant-frame" frameborder="0"></iframe>
     </main>
 
     <footer>
         <p>&copy; 2023 Your Name</p>
     </footer>
-
-    <script>
-        // Function to load interior.html or exterior.html based on radio button selection
-        function loadPlantGroup() {
-            const plantContainer = document.getElementById('plant-container');
-            const selectedGroup = document.querySelector('input[name="plant-group"]:checked').value;
-            const url = `${selectedGroup}.html`;
-
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    plantContainer.innerHTML = data;
-                });
-        }
-
-        // Add event listener to radio buttons
-        const radioButtons = document.querySelectorAll('input[name="plant-group"]');
-        radioButtons.forEach(radio => {
-            radio.addEventListener('change', loadPlantGroup);
-        });
-
-        // Initial load
-        loadPlantGroup();
-    </script>
 </body>
 </html>
